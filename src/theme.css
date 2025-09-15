@@ -53,8 +53,8 @@
   --paragraph2-text: 21.328px;
   --paragraph3-text: 16px;
   --paragraph4-text: 12px;
-  --paragraph-weight: 400;
-  --paragraph-height: 160%; /* 19.205px */
+  --label-weight: 400;
+  --label-height: 160%; /* 19.205px */
 
   /* Spacing - 4px 단위로 */
   /*
