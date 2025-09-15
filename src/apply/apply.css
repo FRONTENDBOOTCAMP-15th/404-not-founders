@@ -23,10 +23,10 @@ body {
   }
 
   .top-section h1 {
-    font-size: var(--heading1-text);
+    font-size: var(--heading2-text);
     font-weight: 700;
     margin-bottom: 32px;
-    text-indent: -100px;
+    text-indent: -300px;
   }
 
   .download-cards {
