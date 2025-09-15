@@ -26,6 +26,7 @@ body {
     font-size: var(--heading1-text);
     font-weight: 700;
     margin-bottom: 32px;
+    text-indent: -100px;
   }
 
   .download-cards {
