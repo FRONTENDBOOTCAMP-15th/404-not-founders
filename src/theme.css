@@ -1,0 +1,81 @@
+:root {
+  /* Color Palette */
+  /* Foundation*/
+  --primary: #0075FF;
+  --secondary: #FFF;
+  --tertiary: #F5F5F5;
+  --accent: #276EF1;
+  --negative: #E11900;
+  --warning: #FFC043;
+  --positive: #048848;
+
+  --primary-dark: white;
+  --secondary-dark: black;
+  --tertiary-dark: #424242;
+
+  /* Contents*/
+  --contentPrimary: black;
+  --contentSecondary: #6B6B6B;
+  --contentTertiary: #A6A6A6;
+
+  --contentPrimary-dark: white;
+  --contentSecondary-dark: #A6A6A6;
+  --contentTertiary-dark: #898989;
+
+  /* Border/Transparent */
+  --borderOpaque: #898989;
+  --borderTransparent: rgba(137, 137, 137, 0.30);
+  --positiveTransparent: rgba(4, 136, 72, 0.10);
+  --negativeTransparent: rgba(225, 25, 0, 0.10);
+
+  --borderOpaque-dark: #C4C4C4;
+
+  /* Typography */
+  /* Heading */
+  --heading1-text: 50.517px;
+  --heading2-text: 37.897px;
+  --heading3-text: 28.43px;
+  --heading4-text: 21.328px;
+  --heading-weight: 700;
+  --heading-height: 140%; /* 70.724px */
+
+  /* Label */
+  --label1-text: 37.897px;
+  --label2-text: 28.43px;
+  --label3-text: 21.328px;
+  --label4-text: 16px;
+  --label5-text: 12px;
+  --label-weight: 600;
+  --label-height: 150%; /* 56.845px */
+
+  /* paragraph Size */
+  --paragraph1-text: 28.43px;
+  --paragraph2-text: 21.328px;
+  --paragraph3-text: 16px;
+  --paragraph4-text: 12px;
+  --label-weight: 400;
+  --label-height: 160%; /* 19.205px */
+
+  /* Spacing - 4px 단위로 */
+  /*
+  Grid
+
+  Mobile
+  range: 320px - 589px
+  columns: 4
+  margin: 16px
+  gutter: 16px
+
+  Tablet
+  range: 600px - 1135px
+  columns: 8
+  margin: 36px
+  gutter: 36px
+
+  Desktop
+  range: 1136px and up
+  columns: 12
+  margin: 64px
+  gutter: 36px
+  */
+}
