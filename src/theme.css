@@ -1,12 +1,12 @@
 :root {
   /* Color Palette */
   /* Foundation*/
-  --primary: #0075FF;
-  --secondary: #FFF;
-  --tertiary: #F5F5F5;
-  --accent: #276EF1;
-  --negative: #E11900;
-  --warning: #FFC043;
+  --primary: #0075ff;
+  --secondary: #fff;
+  --tertiary: #f5f5f5;
+  --accent: #276ef1;
+  --negative: #e11900;
+  --warning: #ffc043;
   --positive: #048848;
 
   --primary-dark: white;
@@ -15,20 +15,20 @@
 
   /* Contents*/
   --contentPrimary: black;
-  --contentSecondary: #6B6B6B;
-  --contentTertiary: #A6A6A6;
+  --contentSecondary: #6b6b6b;
+  --contentTertiary: #a6a6a6;
 
   --contentPrimary-dark: white;
-  --contentSecondary-dark: #A6A6A6;
+  --contentSecondary-dark: #a6a6a6;
   --contentTertiary-dark: #898989;
 
   /* Border/Transparent */
   --borderOpaque: #898989;
-  --borderTransparent: rgba(137, 137, 137, 0.30);
-  --positiveTransparent: rgba(4, 136, 72, 0.10);
-  --negativeTransparent: rgba(225, 25, 0, 0.10);
+  --borderTransparent: rgba(137, 137, 137, 0.3);
+  --positiveTransparent: rgba(4, 136, 72, 0.1);
+  --negativeTransparent: rgba(225, 25, 0, 0.1);
 
-  --borderOpaque-dark: #C4C4C4;
+  --borderOpaque-dark: #c4c4c4;
 
   /* Typography */
   /* Heading */
