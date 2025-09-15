@@ -14,7 +14,7 @@ body {
   gap: 284px;
 }
 
-@media (width >= 1200px) {
+@media (min-width: 1136px) {
   .top-section {
     display: block;
     background: var(--tertiary);
@@ -77,16 +77,19 @@ body {
     font-weight: 700;
   }
 }
-@media (width >= 768px) {
+
+@media (min-width: 600px) {
   .left h2 {
     font-size: var(--heading2-text);
   }
 }
-@media (width >= 1200px) {
+
+@media (min-width: 1136px) {
   .left h2 {
     font-size: var(--heading1-text);
   }
 }
+
 .right {
   flex: 1;
   display: flex;
@@ -99,12 +102,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
 
-  @media (width >= 768px) {
+@media (min-width: 1136px) {
+  .signup-form {
     width: 836px;
   }
+}
 
-  @media (width >= 1200px) {
+@media (min-width: 600px) {
+  .signup-form {
     width: 570px;
   }
 }
@@ -164,6 +171,7 @@ body {
   margin-top: -15px;
   padding-left: 4px;
 }
+
 .input-error input:invalid + .error-msg {
   visibility: visible;
 }
@@ -183,6 +191,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .signup-btn {
   background: var(--primary);
   color: var(--secondary);
@@ -192,7 +201,6 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: 12px;
-
   cursor: pointer;
   transition: background 0.2s;
 }
