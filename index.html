@@ -3,22 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>프로젝트 - CSS</title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-    <script type="module" src="/src/main.js"></script>
+    <title>UT 앱 기능 소개 및 가입</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/theme.css" />
   </head>
   <body>
-    <h1>Vite + CSS</h1>
-    <ul>
-      <li>컴포넌트를 분리해서 구현해주세요.</li>
-      <li>컴포넌트의 코드 리뷰를 AI를 통해 받은 후 개선해보세요.</li>
-      <li>개선점을 문서화하여 정리해 보세요</li>
-      <li>구현한 컴포넌트를 기반으로 페이지를 만들어주세요.</li>
-      <li>접근성과 성능을 신경써주세요</li>
-      <li>소통하고 화합하며 프로젝트 즐겨주세요.</li>
-      <li>결과보다 과정이 중요합니다.‼️</li>
-    </ul>
+    <section class="top-section">
+      <h1>UT 앱에서 더욱 다양한 기능을 만나보세요</h1>
+      <div class="download-cards">
+        <div class="card">
+          <img src="../src/images/logo.png" alt="UT 로고" class="ut-logo" />
+          <span>승객 앱 다운로드</span>
+          <span class="arrow">→</span>
+        </div>
+        <div class="card">
+          <img src="../src/images/logo.png" alt="UT 로고" class="ut-logo" />
+          <span>기사 앱 다운로드</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="left">
+        <h2>UT로 운행하기</h2>
+      </div>
+      <div class="right">
+        <form class="signup-form">
+          <div class="form-header">
+            <h3>기사로 가입하기</h3>
+            <a href="#" class="detail-link">자세히보기</a>
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="이름" />
+            <input type="text" placeholder="성" />
+          </div>
+          <input type="email" placeholder="이메일" class="valid" required />
+          <div class="input-error">
+            <input type="password" placeholder="비밀번호" class="invalid" required />
+            <span class="error-msg">비밀번호를 다시 입력해주세요.</span>
+          </div>
+          <input type="tel" placeholder="전화번호" />
+          <input type="text" value="Seoul, Korea, Republic of (South Korea)" readonly />
+          <p class="terms">가입을 선택하면 약관과 개인정보 보호정책을 확인했으며 이에 동의한 것으로 간주합니다. ...</p>
+          <button type="submit" class="signup-btn">가입하기</button>
+          <div class="login-link">이미 계정이 있으신가요? <a href="#">로그인</a></div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
