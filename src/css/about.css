@@ -11,6 +11,11 @@
   border: 0;
 }
 
+.about {
+  width: 558px;
+  height: 150px;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -49,7 +54,7 @@
 
 .card-text {
   font-size: var(--paragraph3-text);
-  line-height: var(--paragraph-height);
+  line-height: var(--label5-text);
 }
 .card-link {
   display: block;

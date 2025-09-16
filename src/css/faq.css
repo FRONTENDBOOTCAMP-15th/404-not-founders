@@ -1,7 +1,19 @@
 /* FAQ 영역 */
 /* 컴포넌트 */
+.faq > h2 {
+  max-inline-size: 1135px;
+  margin-inline: auto;
+}
+
+.faq .faq-item {
+  max-inline-size: 1135px;
+  width: 100%;
+  margin-inline: auto;
+}
+
 .faq {
-  margin: 40px 24px;
+  margin: 40px auto;
+  padding-inline: 24px;
 
   h2 {
     font-size: var(--heading4-text);
