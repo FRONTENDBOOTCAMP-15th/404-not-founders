@@ -14,6 +14,7 @@ a {
 figure {
   margin: 0;
 }
+
 section {
   background-color: var(--tertiary);
   padding: 64px 0;
@@ -32,59 +33,53 @@ section {
     }
 
     .figure-wrapper {
-      max-width: 1152px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
       gap: 36px;
       flex-wrap: nowrap;
 
-      .download-card-passenger {
-        background: var(--primary-dark);
-        padding: 44px 44px;
-        display: flex;
-        flex-wrap: row nowrap;
-        align-items: center;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        justify-content: space-between;
+      .download-link {
+        text-decoration: none;
 
-        svg {
-          flex-shrink: 0;
+        .download-card-passenger,
+        .download-card-driver {
+          background: var(--primary-dark);
+          padding: 44px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: space-between;
+          transition: all 0.3s ease;
+          cursor: pointer;
+
+          svg {
+            flex-shrink: 0;
+          }
+
+          figcaption {
+            font-size: var(--heading4-text);
+            color: var(--secondary-dark);
+            font-weight: 600;
+            padding-left: 36px;
+            padding-right: 134px;
+            flex: 1;
+            white-space: nowrap;
+
+            .sr-only {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
+              overflow: hidden;
+              clip: rect(0, 0, 0, 0);
+              white-space: nowrap;
+              border: 0;
+            }
+          }
         }
-
-        figcaption {
-          font-size: var(--heading4-text);
-          color: var(--secondary-dark);
-          font-weight: 600;
-          padding-left: 36px;
-          padding-right: 134px;
-          flex: 1;
-          white-space: nowrap;
-        }
-      }
-    }
-
-    .download-card-driver {
-      background: var(--primary-dark);
-      padding: 44px 44px;
-      display: flex;
-      flex-wrap: row nowrap;
-      align-items: center;
-      transition: all 0.3s ease;
-      cursor: pointer;
-
-      svg {
-        flex-shrink: 0;
-      }
-      figcaption {
-        font-size: var(--heading4-text);
-        color: var(--secondary-dark);
-        font-weight: 600;
-        padding-left: 36px;
-        padding-right: 134px;
-        flex: 1;
-        white-space: nowrap;
       }
     }
   }
@@ -105,18 +100,13 @@ section {
         align-items: stretch;
         gap: 20px;
 
-        .download-card-passenger,
-        .download-card-driver {
-          flex-direction: row;
-          box-sizing: border-box;
-
-          figcaption {
-            padding-right: 20px;
-            font-size: var(--heading4-text);
-          }
-
-          svg {
-            flex-shrink: 0;
+        .download-link {
+          .download-card-passenger,
+          .download-card-driver {
+            figcaption {
+              padding-right: 20px;
+              font-size: var(--heading4-text);
+            }
           }
         }
       }
@@ -126,14 +116,15 @@ section {
 
 @media (max-width: 600px) {
   section {
-    inline-size: 100%;
     padding: 40px 0;
+
     .content-wrapper {
       padding: 0 24px;
 
       .section-title {
         font-size: var(--heading4-text);
         text-align: center;
+        margin-bottom: 36px;
       }
 
       .figure-wrapper {
@@ -141,19 +132,14 @@ section {
         align-items: stretch;
         gap: 36px;
 
-        .download-card-passenger,
-        .download-card-driver {
-          padding: 16px;
-          flex-direction: row;
-          box-sizing: border-box;
+        .download-link {
+          .download-card-passenger,
+          .download-card-driver {
+            padding: 16px;
 
-          figcaption {
-            padding-right: 20px;
-            font-size: var(--heading4-text);
-          }
-
-          svg {
-            flex-shrink: 0;
+            figcaption {
+              font-size: var(--heading4-text);
+            }
           }
         }
       }
