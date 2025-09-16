@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header-wrapper {
+  background-color: #0075ff;
+  width: 100%;
+}
+
+.nav-menu {
+  height: 88px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* 로고 스타일 */
+.nav-brand-link {
+  display: block;
+}
+
+.nav-brand-logo {
+  height: 48px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* SVG 아이콘 스타일 */
+.nav-link-with-icon {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+}
+
+.nav-link-svg {
+  height: 40px;
+  vertical-align: middle;
+}
+/* 기업 정보 메뉴 너비 */
+.nav-links li:nth-child(1) .nav-link-svg {
+  width: 112px;
+}
+/* 안전 메뉴 너비 */
+.nav-links li:nth-child(2) .nav-link-svg {
+  width: 52px;
+}
+/* 고객지원 메뉴 너비 */
+.nav-links li:nth-child(3) .nav-link-svg {
+  width: 80px;
+}
+/* 차량 서비스 메뉴 너비 */
+.nav-links li:nth-child(4) .nav-link-svg {
+  width: 97px;
+}
+/* 기사지원 메뉴 너비 */
+.nav-links li:nth-child(5) .nav-link-svg {
+  width: 108px;
+}
+
+/* 우측 버튼 그룹 스타일 */
+.nav-right-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* 언어 선택 버튼 스타일 */
+.language-button {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.language-button svg {
+  margin-right: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+.register-button {
+  background-color: white;
+  color: #0075ff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* 햄버거 버튼 기본 스타일 (데스크톱에서는 숨기기) */
+.menu-toggle-button {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 20px;
+}
+
+/* 햄버거 버튼의 SVG 아이콘 색상 설정 */
+.menu-toggle-button svg path {
+  stroke: white;
+}
+
+/* 850px 이하 화면을 위한 미디어 쿼리 */
+@media (max-width: 850px) {
+  .nav-menu {
+    height: 64px;
+    max-width: none;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  /* 로고 SVG 크기 조정 */
+  .nav-brand-logo {
+    height: 32px;
+  }
+
+  /* 기존 메뉴 항목들 숨기기 */
+  .nav-links {
+    display: none;
+  }
+
+  /* 버튼 그룹 재배치 */
+  .nav-right-buttons {
+    margin-left: auto;
+  }
+
+  /* 언어 선택 버튼 숨기기 */
+  .language-button {
+    display: none;
+  }
+
+  /* 가입하기 버튼 스타일 조정 */
+  .register-button {
+    padding: 8px 16px;
+  }
+
+  /* 햄버거 버튼 보이기 */
+  .menu-toggle-button {
+    display: block;
+  }
+}

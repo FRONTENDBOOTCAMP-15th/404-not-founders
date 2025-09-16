@@ -1,0 +1,63 @@
+@import '/src/theme.css';
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding: 40px 24px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 56px 32px;
+  }
+}
+
+@media (min-width: 1135px) {
+  .card-container {
+    max-width: 1135px;
+    padding: 64px 64px;
+    gap: 36px;
+  }
+}
+
+.about-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+}
+.card-title {
+  color: var(--primary);
+  font-size: var(--label3-text);
+  line-height: var(--label-height);
+}
+
+.card-text {
+  font-size: var(--paragraph3-text);
+  line-height: var(--paragraph-height);
+}
+.card-link {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  font-size: var(--label5-text);
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+}

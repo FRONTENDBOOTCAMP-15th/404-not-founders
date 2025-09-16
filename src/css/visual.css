@@ -1,0 +1,131 @@
+body {
+    font-family: 'Pretendard';
+    margin: 0;
+}
+
+.banner {
+    display: grid;
+    background-image: url("../assets/img/UberTaxi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.content-box {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.title, .subtitle, .app-download {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.title, .subtitle {
+    color: var(--primary);
+}
+
+.title {
+    font-size: var(--heading1-text);
+    font-weight: var(--heading-weight);
+    line-height: var(--heading-height);
+}
+
+.subtitle, .app-download {
+    font-size: var(--label4-text);
+    font-weight: var(--label-weight);
+    line-height: var(--label-height);
+}
+
+.app-download {
+    background-color: var(--primary);
+    border: 0 none;
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.button-text {
+    color: var(--secondary);
+}
+
+/* 모바일 */
+@media (max-width: 599px) {
+    .banner {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 16px;
+        height: 256px;
+        padding: 0 24px;
+        background-position: -310px -15px;
+    }
+    .inner {
+        grid-column: 1 / span 3 ;
+        padding: 40px 0px;
+    }
+    .title {
+        font-size: var(--heading3-text);
+    }
+
+}
+/* 태블릿 */
+@media (min-width: 600px) and (max-width: 1135px){
+  .banner {
+    height: 360px;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 36px;
+    padding: 0 32px;
+    background-position: -262px 0px;
+  }
+  .inner {
+    grid-column: 1 / span 3;
+    padding: 56px 0;
+  }
+  .title {
+    font-size: var(--heading2-text);
+  }
+  .content-box {
+    margin-top: 12px;;
+  }
+}
+/* 데스크탑 */
+@media (min-width: 1136px) {
+    .banner {
+    height: 450px;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 36px;       /* gutter */
+    padding: 0 64px;        /* margin 좌우 */
+    }
+
+    .banner > .inner {
+    padding-top: 38px;
+    }
+
+    .inner {
+        display: grid;
+        grid-column: 2 / span 10;
+        max-width: 1280px;
+        padding: 64px;
+        padding-bottom: 0;
+    }
+    .content-box {
+        padding: 64px 0;
+        margin-top: 12px;
+    }
+    .title {
+        font-size: var(--heading1-text);
+        font-weight: var(--heading-weight);
+        line-height: var(--heading-height);
+    }
+
+    .subtitle, .app-download {
+        font-size: var(--label4-text);
+        font-weight: var(--label-weight);
+        line-height: var(--label-height);
+    }   
+}
