@@ -20,7 +20,7 @@
   }
 
   @media (min-width: 1136px) {
-    margin: 0 200px;
+    margin: 64px 200px;
 
     h2 {
       font-size: var(--heading2-text);
