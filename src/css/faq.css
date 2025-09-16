@@ -1,0 +1,105 @@
+/* FAQ 영역 */
+/* 컴포넌트 */
+.faq {
+  margin: 40px 24px;
+
+  h2 {
+    font-size: var(--heading4-text);
+    font-weight: var(--heading-weight);
+    line-height: var(--heading-height);
+  }
+
+  @media (min-width: 600px) {
+    margin: 56px 32px;
+
+    h2 {
+      font-size: var(--heading3-text);
+      font-weight: var(--heading-weight);
+      line-height: var(--heading-height);
+    }
+  }
+
+  @media (min-width: 1136px) {
+    margin: 0 200px;
+
+    h2 {
+      font-size: var(--heading2-text);
+      font-weight: var(--heading-weight);
+      line-height: var(--heading-height);
+    }
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #8989894d;
+
+    /* 질문 영역 */
+    .faq-question {
+      cursor: pointer;
+      display: flex;
+      padding: 16px 20px;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 32px;
+      font-size: var(--paragraph3-text);
+      font-weight: 600;
+
+      .icon {
+        margin-left: auto;
+      }
+    }
+
+    /* 답변 영역 */
+    .faq-answer {
+      /* background: pink; */
+      display: flex;
+      flex-direction: column;
+      margin: 24px;
+      gap: 24px;
+      font-size: var(--paragraph3-text);
+      font-weight: var(--paragraph-weight);
+      line-height: 160%;
+
+      a {
+        color: inherit;
+        margin: 4px;
+        text-decoration: none;
+        font: inherit;
+        font-weight: 600;
+        border-bottom: 1px solid var(--contentTertiary);
+      }
+    }
+
+    /* 자식들의 기본 마진 제거 */
+    .faq-answer > * {
+      margin: 0;
+    }
+
+    /* 목록 들여쓰기 */
+    .faq-answer ol {
+      padding-left: 1.5rem;
+    }
+  }
+
+  /* 질문 아이콘 */
+  .faq-question .icon::before {
+    content: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'>\
+    <path d='M12 6v12' stroke='%230075FF' stroke-width='2' stroke-linecap='round'/>\
+    <path d='M6 12h12' stroke='%230075FF' stroke-width='2' stroke-linecap='round'/>\
+    </svg>");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .faq-item[open] .faq-question .icon::before {
+    content: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'>\
+    <path d='M6 12h12' stroke='%230075FF' stroke-width='2' stroke-linecap='round'/>\
+    </svg>");
+  }
+}
+
+.faq-question:focus-visible {
+  outline: 3px solid #0075ff;
+}

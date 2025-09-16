@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UT 앱 기능 소개 및 가입</title>
+    <link rel="stylesheet" href="../css/apply.css" />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <section class="top-section">
+      <h1>UT 앱에서 더욱 다양한 기능을 만나보세요</h1>
+      <div class="download-cards">
+        <div class="card">
+          <img src="../assets/img/logo.png" alt="UT 로고" class="ut-logo" />
+          <span>승객 앱 다운로드</span>
+          <img src="../assets/img/arrow.png" class="arrow" alt="화살표" />
+        </div>
+        <div class="card">
+          <img src="../assets/img/logo.png" alt="UT 로고" class="ut-logo" />
+          <span>기사 앱 다운로드</span>
+          <img src="../assets/img/arrow.png" class="arrow" alt="화살표" />
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="left">
+        <h2>UT로 운행하기</h2>
+      </div>
+      <div class="right">
+        <form class="signup-form">
+          <div class="form-header">
+            <h3>기사로 가입하기</h3>
+            <a href="#" class="detail-link">자세히보기</a>
+          </div>
+          <div class="form-row">
+            <label class="sr-only" for="firstName">이름</label>
+            <input type="text" id="firstName" placeholder="이름" />
+            <label class="sr-only" for="lastName">성</label>
+            <input type="text" id="lastName" placeholder="성" />
+          </div>
+          <label class="sr-only" for="email1">이메일</label>
+          <input type="email" id="email1" placeholder="이메일" class="valid" required />
+          <div class="input-error">
+            <label class="sr-only" for="password1"></label>
+            <input type="password" id="password1" placeholder="비밀번호" class="invalid" required />
+            <p class="error-msg">비밀번호를 다시 입력해주세요.</p>
+          </div>
+          <label class="sr-only" for="tel1">전화번호</label>
+          <input type="tel" id="tel1" placeholder="전화번호" />
+          <label class="sr-only" for="city">지역</label>
+          <input type="text" id="city" value="Seoul, Korea, Republic of (South Korea)" readonly />
+          <p class="terms">‘계속'을 선택하면 약관과 개인정보 보호정책을 확인했으며 이에 동의한 것으로 간주됩니다. 또한 위에 입력한 번호로 UT LLC 및 그 제휴가(통칭하여 ‘UT’)가 ARS 등을 이용하여 정보제공이나 마케팅 목적으로 발신하는 전화나 SMS 메시지를 수신하는 데 동의합니다. 마케팅 메시지 수신 동의는 UT 서비스 이용을 위한 필수 조건은 아닙니다. 더 이상 메시지 수신을 원하지 않으시는 경우, 89203번으로 ‘STOP’이라고 문자 메시지를 보내 수신을 거부하실 수 있습니다.</p>
+          <div class="wrapper">
+            <button type="submit" class="signup-btn">가입하기</button>
+            <p class="login-link">이미 계정이 있으신가요?</p>
+            <a href="#" class="login">로그인</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
