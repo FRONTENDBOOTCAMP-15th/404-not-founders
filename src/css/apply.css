@@ -1,6 +1,5 @@
 @import '../theme.css';
 body {
-  margin: 56px;
   font-family: 'Pretendard', 'sans-serif';
   background: var(--secondary);
   color: #111;
