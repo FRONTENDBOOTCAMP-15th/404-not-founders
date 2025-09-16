@@ -13,7 +13,7 @@
   --secondary-dark: black;
   --tertiary-dark: #424242;
 
-  /* Contents*/
+  /* Contents */
   --contentPrimary: black;
   --contentSecondary: #6b6b6b;
   --contentTertiary: #a6a6a6;
@@ -36,6 +36,7 @@
   --heading2-text: 37.897px;
   --heading3-text: 28.43px;
   --heading4-text: 21.328px;
+  --heading5-text: 16px;
   --heading-weight: 700;
   --heading-height: 140%; /* 70.724px */
 
@@ -48,28 +49,28 @@
   --label-weight: 600;
   --label-height: 150%; /* 56.845px */
 
-  /* paragraph Size */
+  /* Paragraph */
   --paragraph1-text: 28.43px;
   --paragraph2-text: 21.328px;
   --paragraph3-text: 16px;
   --paragraph4-text: 12px;
-  --label-weight: 400;
-  --label-height: 160%; /* 19.205px */
+  --paragraph-weight: 400;
+  --paragraph-height: 160%; /* 19.205px */
 
   /* Spacing - 4px 단위로 */
   /*
   Grid
 
   Mobile
-  range: 320px - 589px
+  range: 320px - 599px
   columns: 4
-  margin: 16px
+  margin: 24px
   gutter: 16px
 
   Tablet
   range: 600px - 1135px
   columns: 8
-  margin: 36px
+  margin: 32px
   gutter: 36px
 
   Desktop

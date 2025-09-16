@@ -9,7 +9,7 @@
     line-height: var(--heading-height);
   }
 
-  @media (min-width: 501px) {
+  @media (min-width: 600px) {
     margin: 56px 32px;
 
     h2 {
@@ -19,7 +19,7 @@
     }
   }
 
-  @media (min-width: 851px) {
+  @media (min-width: 1136px) {
     margin: 0 200px;
 
     h2 {
@@ -35,12 +35,10 @@
     /* 질문 영역 */
     .faq-question {
       cursor: pointer;
-      position: relative;
       display: flex;
       padding: 16px 20px;
       flex-flow: row nowrap;
       align-items: center;
-      justify-content: space-between;
       gap: 32px;
       font-size: var(--paragraph3-text);
       font-weight: 600;
@@ -48,11 +46,6 @@
       .icon {
         margin-left: auto;
       }
-    }
-
-    /* 질문 아이콘 */
-    .icon-minus {
-      display: none;
     }
 
     /* 답변 영역 */
@@ -63,7 +56,7 @@
       margin: 24px;
       gap: 24px;
       font-size: var(--paragraph3-text);
-      font-weight: var(--label-weight);
+      font-weight: var(--paragraph-weight);
       line-height: 160%;
 
       a {
@@ -76,22 +69,37 @@
       }
     }
 
-    /* 자식들의 기본 마진 제거(간격은 gap으로만 관리) */
+    /* 자식들의 기본 마진 제거 */
     .faq-answer > * {
       margin: 0;
     }
 
-    /* 목록 들여쓰기 등 필요한 보정만 개별 적용 */
+    /* 목록 들여쓰기 */
     .faq-answer ol {
       padding-left: 1.5rem;
     }
   }
 
-  /* 열렸을 때 아이콘 토글 */
-  details[open] .icon-plus {
-    display: none;
+  /* 질문 아이콘 */
+  .faq-question .icon::before {
+    content: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'>\
+    <path d='M12 6v12' stroke='%230075FF' stroke-width='2' stroke-linecap='round'/>\
+    <path d='M6 12h12' stroke='%230075FF' stroke-width='2' stroke-linecap='round'/>\
+    </svg>");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
   }
-  details[open] .icon-minus {
-    display: inline;
+
+  .faq-item[open] .faq-question .icon::before {
+    content: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'>\
+    <path d='M6 12h12' stroke='%230075FF' stroke-width='2' stroke-linecap='round'/>\
+    </svg>");
   }
+}
+
+.faq-question:focus-visible {
+  outline: 3px solid #0075ff;
 }
