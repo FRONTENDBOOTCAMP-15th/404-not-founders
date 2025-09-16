@@ -1,5 +1,5 @@
 /* FAQ 영역 */
-/* 컴포넌트 */
+/* 컴포넌트  */
 .faq > h2 {
   max-inline-size: 1135px;
   margin-inline: auto;
@@ -19,6 +19,7 @@
     font-size: var(--heading4-text);
     font-weight: var(--heading-weight);
     line-height: var(--heading-height);
+    margin-bottom: 36px;
   }
 
   @media (min-width: 600px) {
