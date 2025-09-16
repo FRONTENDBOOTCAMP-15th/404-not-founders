@@ -1,7 +1,5 @@
 @import '../theme.css';
 
-/* CSS 스타일을 작성해 주세요. */
-
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +28,7 @@ section {
       font-size: var(--heading2-text);
       font-weight: 700;
       color: var(--secondary-dark);
-      margin-bottom: 36px;
+      margin-block-end: 36px;
     }
 
     .figure-wrapper {
