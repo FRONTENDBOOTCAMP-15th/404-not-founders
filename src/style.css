@@ -1,1 +1,129 @@
-/* CSS 스타일을 작성해 주세요. */ 
+/* @import './theme.css';
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+figure {
+  margin: 0;
+}
+
+section {
+  background-color: var(--tertiary);
+  padding: 64px 0;
+  div {
+    display: flex;
+  }
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--secondary-dark);
+  margin-block-end: 36px;
+}
+
+section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin: 0 auto;
+ 
+}
+
+.figure-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.UT1 {
+  background: var(--primary-dark);
+  padding: 44px 44px;
+  display: flex;
+  flex-wrap: row nowrap;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  figcaption {
+    font-size: 16px;
+    color: var(--secondary-dark);
+    font-weight: 600;
+    padding-left: 36px;
+    padding-inline-end: 134px;
+    flex: 1;
+  }
+
+  svg {
+    inline-size: 56px;
+    block-size: 56px;
+    justify-content: space-between;
+  }
+}
+
+figure svg:last-child {
+  width: 20px;
+  height: 15px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.UT2 {
+  background: var(--primary-dark);
+  padding: 44px 44px;
+  display: flex;
+  flex-wrap: row nowrap;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-width: 300px;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  figcaption {
+    font-size: 16px;
+    color: var(--secondary-dark);
+    font-weight: 600;
+    padding-left: 36px;
+    padding-inline-end: 134px;
+    flex: 1;
+  }
+
+  svg {
+    inline-size: 56px;
+    block-size: 56px;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 768px) {
+  section > div {
+    flex-direction: column;
+
+  }
+
+  figure {
+    width: 100%;
+    max-width: 400px;
+    min-width: auto;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+} */

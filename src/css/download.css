@@ -1,0 +1,164 @@
+@import '../theme.css';
+
+/* CSS 스타일을 작성해 주세요. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+section {
+  background-color: var(--tertiary);
+  padding: 64px 0;
+
+  .content-wrapper {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    .section-title {
+      display: inline-block;
+      font-size: var(--heading2-text);
+      font-weight: 700;
+      color: var(--secondary-dark);
+      margin-bottom: 36px;
+    }
+
+    .figure-wrapper {
+      max-width: 1152px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 36px;
+      flex-wrap: nowrap;
+
+      .download-card-passenger {
+        background: var(--primary-dark);
+        padding: 44px 44px;
+        display: flex;
+        flex-wrap: row nowrap;
+        align-items: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        justify-content: space-between;
+
+        svg {
+          flex-shrink: 0;
+        }
+
+        figcaption {
+          font-size: var(--heading4-text);
+          color: var(--secondary-dark);
+          font-weight: 600;
+          padding-left: 36px;
+          padding-right: 134px;
+          flex: 1;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .download-card-driver {
+      background: var(--primary-dark);
+      padding: 44px 44px;
+      display: flex;
+      flex-wrap: row nowrap;
+      align-items: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      svg {
+        flex-shrink: 0;
+      }
+      figcaption {
+        font-size: var(--heading4-text);
+        color: var(--secondary-dark);
+        font-weight: 600;
+        padding-left: 36px;
+        padding-right: 134px;
+        flex: 1;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 1136px) {
+  section {
+    .content-wrapper {
+      padding: 0 32px;
+
+      .section-title {
+        font-size: var(--heading3-text);
+        text-align: center;
+      }
+
+      .figure-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+
+        .download-card-passenger,
+        .download-card-driver {
+          flex-direction: row;
+          box-sizing: border-box;
+
+          figcaption {
+            padding-right: 20px;
+            font-size: var(--heading4-text);
+          }
+
+          svg {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    inline-size: 100%;
+    padding: 40px 0;
+    .content-wrapper {
+      padding: 0 24px;
+
+      .section-title {
+        font-size: var(--heading4-text);
+        text-align: center;
+      }
+
+      .figure-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 36px;
+
+        .download-card-passenger,
+        .download-card-driver {
+          padding: 16px;
+          flex-direction: row;
+          box-sizing: border-box;
+
+          figcaption {
+            padding-right: 20px;
+            font-size: var(--heading4-text);
+          }
+
+          svg {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}
