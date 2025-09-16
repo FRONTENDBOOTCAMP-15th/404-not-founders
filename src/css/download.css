@@ -18,7 +18,6 @@ figure {
 section {
   background-color: var(--tertiary);
   padding: 64px 0;
-
   .content-wrapper {
     max-width: 1152px;
     margin: 0 auto;
